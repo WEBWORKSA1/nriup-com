@@ -1,0 +1,23 @@
+{
+ "currencies": ["USD","GBP","EUR","CAD","AUD","AED","SAR","QAR","KWD","OMR","BHD","SGD","NZD","MYR","MUR","FJD","TTD","GYD","SRD","ZAR"],
+ "news": [
+  ["up", "\"Uttar Pradesh\" NRI OR pravasi OR diaspora"],
+  ["property", "NRI property India OR \"UP RERA\" OR \"stamp duty\" Uttar Pradesh"],
+  ["money", "NRI tax OR \"NRE account\" OR remittances India"],
+  ["gulf", "\"Indian workers\" Gulf OR eMigrate OR \"Indian embassy\" workers"],
+  ["travel", "\"Noida International Airport\" OR \"Lucknow airport\" OR \"Varanasi airport\" OR \"Ayodhya airport\""],
+  ["diaspora", "\"Indian diaspora\" OR \"OCI card\" OR \"Pravasi Bharatiya\""],
+  ["roots", "Girmitiya OR \"indentured Indians\" OR Girmit"]
+ ],
+ "youtube_channels": [
+  ["@MEAIndia", "diaspora"]
+ ],
+ "youtube_searches": [
+  ["money", "NRI property sale India tax explained"],
+  ["money", "NRE NRO account explained NRI"],
+  ["travel", "Ayodhya Varanasi Prayagraj travel guide"],
+  ["travel", "Noida International Airport Jewar"],
+  ["roots", "Girmitiya history indentured Indians"],
+  ["gulf", "Indian workers Gulf emigration rules"]
+ ]
+}
