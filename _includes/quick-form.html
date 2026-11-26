@@ -1,0 +1,11 @@
+<div class="form-card"><span class="eyebrow">Free case review</span><h3>{{ include.title }}</h3><p class="small muted">Tell us what's happening. A real person replies within one business day.</p>
+<form class="js-form" data-subject="Quick request" data-thanks="/thank-you.html" data-autoresponse="Thank you for contacting nriUP. We have your request and will reply within one business day." data-ok="Received — check your inbox for our confirmation.">
+<input type="hidden" name="service" value="{{ include.service }}">
+<div class="field"><label for="qf-n-{{ include.service }}">Name</label><input id="qf-n-{{ include.service }}" name="name" required autocomplete="name"></div>
+<div class="field"><label for="qf-e-{{ include.service }}">Email</label><input id="qf-e-{{ include.service }}" name="email" type="email" required autocomplete="email"></div>
+<div class="field"><label for="qf-d-{{ include.service }}">District in UP</label><select id="qf-d-{{ include.service }}" name="district" data-districts></select></div>
+<div class="field"><label for="qf-m-{{ include.service }}">What do you need?</label><textarea id="qf-m-{{ include.service }}" name="message" required style="min-height:84px"></textarea></div>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label class="check small" style="margin-bottom:12px"><input type="checkbox" name="consent" value="yes" required> <span>I agree to be contacted and accept the <a href="/privacy.html">Privacy Policy</a>.</span></label>
+<button class="btn btn-sun btn-block" type="submit">Get my free review</button><div class="form-msg" role="status"></div></form>
+<p class="small muted" style="margin:10px 0 0">More detail? Use the <a href="/get-help.html?service={{ include.service }}">full request form</a>.</p></div>
