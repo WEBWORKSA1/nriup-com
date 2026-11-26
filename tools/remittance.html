@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Money Transfer to India True-Cost Calculator (Live Mid-Market Rate) | nriUP"
+description: "Compare money-transfer quotes to India against today's mid-market rate. See the hidden exchange-rate margin and fees, and how many rupees your family really receives."
+---
+<section class="page-hero"><div class="wrap"><div class="crumbs"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Transfer true cost</div><span class="eyebrow">Free tool</span><h1>What does your transfer really cost?</h1><p class="lead">Most of the cost hides in the exchange rate, not the fee. Type the quotes you're given and we'll measure them against the mid-market rate.</p></div></section>
+<section><div class="wrap tool" id="remitTool">
+<div class="form-card">
+<div class="row"><div class="field"><label for="rCur">You send</label><select id="rCur"><option>USD</option><option>GBP</option><option>EUR</option><option>CAD</option><option>AUD</option><option>AED</option><option>SAR</option><option>QAR</option><option>KWD</option><option>OMR</option><option>BHD</option><option>SGD</option><option>NZD</option><option>MYR</option><option>MUR</option><option>FJD</option><option>TTD</option><option>ZAR</option></select></div>
+<div class="field"><label for="rAmt">Amount</label><input id="rAmt" inputmode="decimal" value="1000"></div></div>
+<div class="field"><label for="rMid">Mid-market rate (₹ per unit)</label><input id="rMid" inputmode="decimal" placeholder="auto-filled daily"><span class="small muted" data-rate-updated></span></div>
+<h3 style="margin-top:10px">Quotes you were given</h3>
+<div class="prow row" style="grid-template-columns:1.2fr 1fr .8fr"><input class="pn" aria-label="Provider 1 name" value="Provider A"><input class="pr" inputmode="decimal" aria-label="Provider 1 rate" placeholder="₹ rate"><input class="pf" inputmode="decimal" aria-label="Provider 1 fee" placeholder="fee"></div>
+<div class="prow row" style="grid-template-columns:1.2fr 1fr .8fr;margin-top:8px"><input class="pn" aria-label="Provider 2 name" value="My bank"><input class="pr" inputmode="decimal" aria-label="Provider 2 rate" placeholder="₹ rate"><input class="pf" inputmode="decimal" aria-label="Provider 2 fee" placeholder="fee"></div>
+<div class="prow row" style="grid-template-columns:1.2fr 1fr .8fr;margin-top:8px"><input class="pn" aria-label="Provider 3 name" value="Exchange house"><input class="pr" inputmode="decimal" aria-label="Provider 3 rate" placeholder="₹ rate"><input class="pf" inputmode="decimal" aria-label="Provider 3 fee" placeholder="fee"></div>
+<p class="small muted" style="margin-top:10px">Fee is in the currency you send. Rate is rupees per one unit, after any promo.</p>
+</div>
+<div class="out" id="rOut" aria-live="polite"></div>
+</div></section>
+<section class="band"><div class="wrap narrow prose" style="padding:0">
+<h2>How to read the result</h2>
+<p>The <b>mid-market rate</b> is the midpoint between what banks pay to buy and sell a currency. No consumer gets it exactly. A provider that advertises “zero fees” usually earns its money by giving you a lower rate. The true cost is the difference between what your family would receive at the mid-market rate and what they actually receive.</p>
+<p>Three habits save the most: compare at least two providers on the day you send, send larger amounts less often when fixed fees apply, and check the rate shown <i>after</i> any first-transfer promotion ends. Read the full <a href="/guides/send-money-to-india-true-cost.html">guide to sending money to India</a>.</p>
+<p class="small muted">We are not paid by any provider shown in your results. The tool runs in your browser; nothing you type is sent to us.</p>
+</div></section>
