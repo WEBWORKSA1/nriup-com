@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="guide">
+<section class="page-hero"><div class="wrap narrow"><div class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / {{ page.crumb }}</div><span class="eyebrow">{{ page.eyebrow }}</span><h1>{{ page.h1 }}</h1><p class="lead">{{ page.lead }}</p><p class="meta">Reviewed {{ page.reviewed | date: "%-d %b %Y" }} · {{ page.read }} min read · Independent guide, not legal or tax advice</p></div></section>
+<div class="wrap narrow prose">
+{{ content }}
+{% if page.sources %}<div class="sources"><h2>Sources</h2><ol>{% for s in page.sources %}<li><a href="{{ s.u }}" target="_blank" rel="noopener nofollow">{{ s.t }}</a></li>{% endfor %}</ol></div>{% endif %}
+</div>
+<section class="lead-band"><div class="wrap lead-inner"><div><span class="eyebrow">Free case review</span><h2>{{ page.cta_title }}</h2><p>Tell us your situation in two minutes. A real person replies within one business day with next steps — no fee, no obligation.</p></div><a class="btn btn-sun btn-lg" href="/get-help.html?service={{ page.cta_service }}">Start my free review</a></div></section>
+</article>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.h1 | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ page.reviewed | date: '%Y-%m-%d' }}","author":{"@type":"Organization","name":"nriUP Editorial"},"publisher":{"@type":"Organization","name":"nriUP"},"mainEntityOfPage":"{{ site.url }}{{ page.url }}"}</script>

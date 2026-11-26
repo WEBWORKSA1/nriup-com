@@ -1,0 +1,5 @@
+title: "nriUP — Uttar Pradesh, from anywhere"
+url: "https://nriup.com"
+baseurl: ""
+lang: en
+exclude: [README.md, BUILD-PROMPTS.md, RESEARCH.md, scripts, Gemfile, Gemfile.lock, node_modules, vendor]

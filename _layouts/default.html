@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+{% assign canon = page.url | replace: 'index.html', '' %}<link rel="canonical" href="{{ site.url }}{{ canon }}">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta name="theme-color" content="#0d1330">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="nriUP">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ site.url }}{{ canon }}">
+<meta property="og:image" content="{{ site.url }}/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css?v={{ site.data.build.updated }}">
+<script>try{var t=localStorage.getItem('nriup-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"nriUP","url":"https://nriup.com/","logo":"https://nriup.com/assets/img/favicon.svg"},{"@type":"WebSite","name":"nriUP","url":"https://nriup.com/","description":"Independent hub for Non-Resident Indians with property, family, roots or plans in Uttar Pradesh."}]}</script>
+{% if page.schema %}<script type="application/ld+json">{{ page.schema }}</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website/domain name/Sponsorship/Advertisement/Partnership <span aria-hidden="true">→</span></a></div>
+<header class="site"><div class="wrap nav">
+<a class="logo" href="/" aria-label="nriUP home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30"><rect width="32" height="32" rx="9" fill="#0d1330"/><path d="M7 24V15a9 9 0 0 1 18 0v9" fill="none" stroke="#ff8a1f" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="15" r="3.2" fill="#f5c044"/></svg></span><span class="lname">nri<b>UP</b></span></a>
+<nav aria-label="Main"><ul class="menu" id="menu">
+<li><a href="/property.html">Property</a></li>
+<li><a href="/money.html">Money</a></li>
+<li><a href="/roots.html">Roots</a></li>
+<li><a href="/gulf.html">Gulf &amp; jobs</a></li>
+<li><a href="/family.html">Family</a></li>
+<li><a href="/visit.html">Visit</a></li>
+<li><a href="/invest.html">Invest</a></li>
+<li><a href="/tools/">Tools</a></li>
+<li><a href="/guides/">Guides</a></li>
+<li class="menu-cta"><a href="/get-help.html">Free case review</a></li>
+</ul></nav>
+<div class="nav-cta"><a class="btn btn-sun btn-sm" href="/get-help.html">Free case review</a>
+<button class="icon-btn" id="themeBtn" aria-label="Toggle light or dark theme">◐</button>
+<button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site"><div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand"><a class="logo" href="/"><span class="lname">nri<b>UP</b></span></a>
+<p>Independent help for the Uttar Pradesh diaspora: property, papers, money, roots, family and visits, handled from anywhere in the world.</p>
+<form class="js-form inline-form" data-subject="Newsletter signup" data-ok="You're in. The UP Letter arrives twice a month.">
+<input type="email" name="email" required placeholder="you@email.com" aria-label="Email for the UP Letter newsletter"><input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><input type="hidden" name="list" value="The UP Letter">
+<button class="btn btn-sun btn-sm" type="submit">Get the UP Letter</button><div class="form-msg" role="status"></div></form></div>
+<div><h4>Do it from abroad</h4><ul><li><a href="/property.html">Property in UP</a></li><li><a href="/money.html">Money &amp; tax</a></li><li><a href="/family.html">Parents &amp; return</a></li><li><a href="/gulf.html">Gulf &amp; overseas jobs</a></li><li><a href="/invest.html">Invest &amp; business</a></li><li><a href="/visit.html">Visit &amp; pilgrimage</a></li></ul></div>
+<div><h4>Free tools</h4><ul><li><a href="/tools/remittance.html">Transfer true-cost</a></li><li><a href="/tools/stamp-duty.html">UP stamp duty</a></li><li><a href="/tools/property-tds.html">Property-sale TDS</a></li><li><a href="/tools/nri-status.html">NRI status check</a></li><li><a href="/tools/account-picker.html">NRE / NRO / FCNR</a></li><li><a href="/tools/checklist.html">Document checklists</a></li><li><a href="/districts.html">75 districts</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="/roots.html">Girmitiya roots</a></li><li><a href="/contests.html">Mera UP contest</a></li><li><a href="/support.html">Support nriUP</a></li><li><a href="/careers.html">Careers &amp; experts</a></li><li><a href="/advertise.html">Advertise &amp; partner</a></li><li><a href="/news.html">Live news</a></li><li><a href="/videos.html">Videos</a></li></ul></div>
+<div><h4>About</h4><ul><li><a href="/about.html">About nriUP</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/editorial-policy.html">Editorial policy</a></li><li><a href="/privacy.html">Privacy</a></li><li><a href="/cookies.html">Cookies</a></li><li><a href="/terms.html">Terms</a></li><li><a href="/disclaimer.html">Disclaimer</a></li><li><a href="/trademark.html">Trademark &amp; ©</a></li></ul></div>
+</div>
+<div class="legal">
+<p><b>Trademark &amp; copyright disclosure:</b> “nriUP” is used on this site only as a domain-name identifier for NRIup.com. “NRI” (Non-Resident Indian) and “UP” (Uttar Pradesh) are descriptive terms; no exclusive rights are claimed in them. nriUP is an independent website. It is not a government website and is not affiliated with, endorsed by or sponsored by the Government of Uttar Pradesh, its NRI Department or UP NRI Card programme, the Government of India, the Ministry of External Affairs, any bank, money-transfer company, temple trust, development authority or other organisation named on this site. No official emblems or logos are used. Third-party names and trademarks belong to their owners and are used only to identify them. Embedded videos remain the property of their creators. <a href="/trademark.html">Full disclosure</a>.</p>
+<p>General information only — not legal, tax, financial or immigration advice. Calculators give estimates; confirm with the official portal or a qualified professional. Some pages show advertising served by Google AdSense. © <span class="year">2026</span> NRIup.com. Original text, tools, data compilations and design © nriUP. Last updated {{ site.data.build.updated }}.</p>
+</div></div></footer>
+<div class="mcta"><a class="btn btn-ghost" href="/tools/">Free tools</a><a class="btn btn-sun" href="/get-help.html">Free case review</a></div>
+<aside class="nudge" id="nudge" aria-label="Free property check offer" hidden><button class="nudge-x" aria-label="Close" data-nudge-close>×</button><b>Own property or land in UP?</b><p>Get a free 10-point check of your khatauni, mutation and risk of encroachment — from wherever you live.</p><a class="btn btn-sun btn-sm btn-block" href="/get-help.html?service=property-care">Check my property</a></aside>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookie notice" hidden><p>We use essential storage and, with your consent, cookies from Google to show and measure ads. See our <a href="/cookies.html">Cookie Policy</a>.</p>
+<div class="acts"><button class="btn btn-sun btn-sm" data-cookie="all">Accept</button><button class="btn btn-ghost btn-sm" data-cookie="essential">Essential only</button></div></div>
+<script src="/assets/js/main.js?v={{ site.data.build.updated }}" defer></script>
+</body>
+</html>
